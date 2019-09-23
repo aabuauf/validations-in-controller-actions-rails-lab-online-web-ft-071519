@@ -13,7 +13,6 @@ class PostsController < ApplicationController
     
     # Create a brand new, unsaved, not-yet-validated Post object from the form.
     @postnew = Post.new(post_params)
- binding.pry
     # Run the validations WITHOUT attempting to save to the database, returning
     # true if the Post is valid, and false if it's not.
     if @postnew.valid?
